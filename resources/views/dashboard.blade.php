@@ -1,8 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            
-        </h2>
+        <div class="flex items-center justify-between">
+            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                ダッシュボード
+            </h2>
+            <a href="{{ route('shifts.create') }}" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                シフト作成
+            </a>
+        </div>
     </x-slot>
 
     <div class="py-12">
