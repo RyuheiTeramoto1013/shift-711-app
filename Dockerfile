@@ -50,6 +50,8 @@ RUN mkdir -p storage/framework/cache/data \
     bootstrap/cache \
     && chown -R application:application storage bootstrap/cache
 
+ARG CACHE_DATE=2025-10-21
+
 COPY docker/railway/start.sh /opt/start.sh
 RUN chmod +x /opt/start.sh
 
