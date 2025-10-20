@@ -52,7 +52,6 @@ RUN mkdir -p storage/framework/cache/data \
 
 ARG CACHE_DATE=2025-10-21
 
-COPY docker/railway/start.sh /opt/start.sh
-RUN chmod +x /opt/start.sh
+COPY --chmod=0755 docker/railway/start.sh /opt/start.sh
 
 CMD ["/opt/start.sh"]
